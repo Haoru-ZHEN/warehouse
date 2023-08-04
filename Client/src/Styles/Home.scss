@@ -1,0 +1,256 @@
+:root {
+     --hue-color: 250;
+     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+     --text-color-light: hsl(var(--hue-color), 8%, 65%);
+     --black: #1c0522;
+     --orderColor: #2f2f36;
+     --learnColor: #d2cdd0;
+     --light-brown: #4d4f53;
+     --lighter-brown: #73767c;
+     --learnColor2: #f0e8ec;
+     --header-a: 500 1rem/1.5 'Helvetica Now Text Medium', Helvetica, Arial, sans-serif;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     /*font-family: 'Helvetica Now Display Medium', 'Helvetica', 'Arial', 'sans-serif';*/
+     font-family: 'Gotham', sans-serif;
+     box-sizing: border-box;
+}
+
+.HomeDiv {
+     body {
+          min-height: 100vh;
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+     }
+
+     /*******section1***********/
+     .parts {
+          width: 100%;
+          display: flex;
+     }
+
+     .section1 {
+          justify-content: center;
+          height: max-content;
+          padding: 40px 150px;
+          background-color: #fff;
+     }
+
+     .section1 ul {
+          min-height: 100%;
+          margin-right: 0px;
+          margin-bottom: 0;
+          padding-left: 0;
+          border-radius: 15px;
+          border-bottom-right-radius: 0;
+          background-color: #f4f5f5;
+     }
+
+     .section1 ul li:nth-child(1) {
+          background-color: #0188cc;
+          border-top-left-radius: 15px;
+          cursor: auto;
+          color: #fff;
+          /*border-top-left-radius: 10px;
+     border-top-right-radius: 10px;*/
+     }
+
+     .section1 ul li:nth-child(1):hover {
+          background-color: #0188cc;
+     }
+
+     .section1 ul li {
+          width: 230px;
+          list-style: none;
+          background-color: #f4f5f5;
+          padding: 15px 30px;
+          cursor: pointer;
+          font-size: 14px;
+          text-align: start;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+     }
+
+     .section1 ul li:hover {
+          background-color: #fff;
+     }
+
+     .section1 .showDiv {
+          position: absolute;
+          display: none;
+          flex-direction: column;
+          width: 685px;
+          height: 450px;
+          transform: translateX(-18px);
+          z-index: 5;
+          background-color: #fff;
+          justify-content: start;
+          padding: 20px;
+          border: 1px solid #ededed;
+
+          .textDiv {
+               width: 100%;
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+               align-items: center;
+               margin-bottom: 20px;
+
+               h3 {
+                    text-align: start;
+                    font-size: 16px;
+                    font-weight: 350;
+                    margin-bottom: 0;
+               }
+
+               a{
+                    font-size: 16px;
+                    font-weight: 350;
+                    color: #0188cc;
+               }
+          }
+
+          .gridContainer {
+               width: 100%;
+               display: grid;
+               grid-template-columns: 1fr 1fr 1fr 1fr;
+
+               img {
+                    width: 128px;
+                    height: 58px;
+                    border: 1px solid #ededed;
+                    cursor: pointer;
+               }
+
+               img:hover {
+                    border: 1px solid #0188cc;
+                    box-shadow: 0 1px 5px rgb(1, 136, 204, 0.5);
+               }
+          }
+     }
+
+     .section1 .myswiper {
+          overflow: hidden;
+          width: 685px;
+          height: 450px;
+          display: flex;
+     }
+
+     .section1 .myswiper .aslide {
+          height: 450px;
+          background-size: cover;
+          background-position: center center;
+     }
+
+     .swiper-pagination {
+          transform: translateY(-10px);
+     }
+
+     .swiper-pagination-bullet {
+          background: #fff;
+          opacity: 0.8;
+     }
+
+     .swiper-pagination-bullet-active {
+          background: #007aff;
+     }
+
+     .section1 .rightDiv {
+          padding: 0 0 15px 0;
+          display: flex;
+          flex-direction: column;
+          margin-left: 20px;
+          align-items: center;
+          justify-content: space-between;
+     }
+
+     .section1 .rightDiv img {
+          width: 246px;
+          height: 206px;
+          cursor: pointer;
+     }
+
+     /******Section2*********/
+     .section2 {
+          width: 100%;
+          height: max-content;
+          padding: 40px 280px;
+          background-color: #fff;
+     }
+
+     .section2 .contentDiv {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+     }
+
+     .section2 .contentDiv .productItem {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+     }
+
+     .section2 .contentDiv .productItem Link,
+     .section2 .contentDiv .productItem a{
+          text-decoration: none;
+     }
+
+     .section2 .contentDiv .productItem:hover h3 {
+          color: #0188cc;
+     }
+
+     .section2 .contentDiv .productItem img {
+          width: auto;
+          height: 75px;
+          object-fit: cover;
+          margin-bottom: 10px;
+     }
+
+     .section2 .contentDiv .productItem h3 {
+          font-size: 14px;
+          font-weight: 300;
+          color: #000;
+     }
+
+     /****hide header***/
+     .nav-up {
+          top: -150px;
+     }
+     /***********FOOTER*********/
+
+     .footDiv {
+          position: absolute;
+          bottom: 126.5px;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 1;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          transition: opacity 0.6s ease;
+     }
+
+     .footDiv li {
+          list-style: none;
+          margin-left: 15px;
+     }
+
+     .footDiv li a {
+          text-decoration: none;
+          color: var(--lighter-brown);
+          border-radius: 20px;
+          font-weight: 350;
+          font-size: 12.5px;
+     }
+}

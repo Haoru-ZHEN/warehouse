@@ -1,0 +1,311 @@
+.LoginDiv {
+     width: 100%;
+     height: 100vh;
+     /*background-image: -webkit-linear-gradient(
+          136deg,
+          rgb(149, 153, 226) 0%,
+          rgb(139, 198, 236) 100%
+     );*/
+     //background-color: rgb(248,249,250);
+     background-color: rgb(139, 198, 236);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     .contentDiv {
+          width: 75%; //75%
+          max-height: 85%; //85%
+          background-color: rgb(248, 249, 250);
+          border-radius: 10px;
+          display: grid;
+          grid-template-columns: 0.7fr 1fr;
+          box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+          color: #5c5e62; //,171a20
+     }
+
+     .leftDiv {
+          max-height: 640px;
+          height: 640px;
+          display: flex;
+          flex-direction: column;
+          padding: 50px;
+          align-items: center;
+          overflow-y: hidden;
+          overflow-x: hidden;
+
+          .signinDiv {
+               transform: translateX(0px); //translateX(430px);
+               transition: transform 0.5s ease;
+          }
+
+          .signupDiv {
+               //position: absolute;
+               width: 100%;
+               transform: translateY(-450px) translateX(-430px);
+               transition: transform 0.5s ease;
+
+               .iconDiv {
+                    width: 100%;
+                    display: flex;
+                    align-items: start;
+               }
+               .backIcon {
+                    cursor: pointer;
+               }
+
+               h2 {
+                    font-size: 25px;
+                    margin-bottom: 0;
+               }
+
+               .input-box {
+                    position: relative;
+                    width: 100%;
+                    height: 45px;
+                    //border-bottom: 3px solid #ccc;//#38d39f;
+                    margin: 25px 0;
+
+                    div {
+                         display: flex;
+                         flex-direction: row;
+                         width: 100%;
+                         height: 100%;
+
+                         span {
+                              display: flex;
+                              align-items: center;
+                              text-align: end;
+                              font-size: 14px;
+                              color: #171a20;
+                              font-weight: 350;
+                              border-bottom: 1px solid #ccc;
+                              padding: 0 5px 0 5px;
+                         }
+                    }
+               }
+
+               .input-box label {
+                    position: absolute;
+                    top: 50%;
+                    left: 5px;
+                    transform: translateY(-20%);
+                    font-size: 14px;
+                    color: #5c5e62;
+                    font-weight: 300;
+                    pointer-events: none;
+                    transition: 0.5s;
+               }
+
+               .input-box input {
+                    width: 100%;
+                    height: 100%;
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    font-size: 14px;
+                    color: #171a20;
+                    font-weight: 350;
+                    padding: 0 35px 0 5px;
+                    border-bottom: 1px solid #ccc;
+               }
+
+               .input-box input:focus {
+                    border-bottom: 1px solid #3e6ae1;
+                    border-color: #3e6ae1;
+               }
+
+               .input-box div span#prefix.focus {
+                    border-bottom: 1px solid #3e6ae1;
+               }
+
+               .input-box input:focus ~ label,
+               .input-box input:valid ~ label {
+                    top: -8px;
+               }
+
+               .stateDiv {
+                    label {
+                         width: 100%;
+                         text-align: start;
+                         margin-bottom: 5px;
+                         margin-top: 15px;
+                         font-size: 14px;
+                         font-weight: 300;
+                    }
+               }
+
+               .form-select {
+                    font-size: 14px;
+                    font-weight: 300;
+               }
+
+               #agreeBox {
+                    cursor: pointer;
+               }
+
+               #agreeBox + Label {
+                    width: 350px;
+                    font-size: 14px;
+                    font-weight: 300;
+                    text-align: start;
+                    cursor: pointer;
+               }
+          }
+
+          .imgDiv {
+               margin-bottom: 60px;
+          }
+          img {
+               width: 50%;
+               object-fit: cover;
+          }
+
+          .inputDetail {
+               width: 100%;
+               border: none;
+               border-bottom: 1px solid #ccc;
+               outline: 0;
+               padding: 10px;
+               font-size: 14px;
+               font-weight: 300;
+               margin-bottom: 30px;
+          }
+
+          .rmbDiv {
+               width: 100%;
+               display: flex;
+               flex-direction: row;
+               margin-bottom: 80px;
+               cursor: pointer;
+
+               input {
+                    width: max-content;
+                    margin-bottom: 0;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                    accent-color: #3e6ae1;
+                    cursor: pointer;
+               }
+
+               label {
+                    font-size: 14px;
+                    font-weight: 300;
+                    cursor: pointer;
+               }
+          }
+
+          .form-check {
+               width: max-content;
+               margin-bottom: 20px;
+          }
+          #rmbBox {
+               cursor: pointer;
+          }
+
+          #rmbBox + Label {
+               font-size: 14px;
+               font-weight: 300;
+               cursor: pointer;
+          }
+
+          .butDiv {
+               width: 100%;
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               justify-content: center;
+          }
+          button {
+               width: 70%;
+               padding: 10px 0;
+               border-radius: 5px;
+               outline-offset: -5px;
+               outline-color: #fff;
+               border: none;
+               font-size: 14px;
+               cursor: pointer;
+               color: #fff;
+               background-color: #3e6ae1;
+               transition: background-color 0.3s ease;
+               margin-bottom: 20px;
+          }
+
+          button:hover {
+               background-color: #2c4999;
+          }
+
+          a {
+               font-size: 12px;
+               font-weight: 300;
+               cursor: pointer;
+               margin-bottom: 20px;
+               text-transform: capitalize;
+               text-decoration: none;
+          }
+
+          .sign_a {
+               display: block;
+               width: 100%;
+               text-align: end;
+               color: #ccc;
+               span {
+                    color: #3e6ae1;
+               }
+          }
+          .forgot_a {
+               display: block;
+               width: 100%;
+               text-align: center;
+               margin-top: 0px;
+          }
+     }
+
+     .rightDiv {
+          max-height: 100%;
+          background-image: url(../../public/sign_in_bg.png);
+          background-size: cover;
+          padding: 40px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          z-index: 5;
+
+          h2 {
+               text-align: end;
+               color: #fff;
+               font-size: 35px;
+               margin-bottom: 20px;
+          }
+
+          p {
+               width: 70%;
+               color: #ffffffcf;
+               text-align: end;
+               font-size: 14px;
+               line-height: 20px;
+          }
+
+          #rmbBox + Label {
+               font-size: 14px;
+               font-weight: 300;
+          }
+     }
+
+     /*========== SCROLL BAR ==========*/
+     ::-webkit-scrollbar {
+          width: 0.6rem;
+          background-color: hsl(var(--hue-color), 12%, 90%);
+          border-radius: 0.5rem;
+     }
+
+     ::-webkit-scrollbar-thumb {
+          background-color: var(--scroll-thumb-color);
+          border-radius: 0.5rem;
+     }
+
+     ::-webkit-scrollbar-thumb:hover {
+          background-color: var(--text-color-light);
+     }
+}

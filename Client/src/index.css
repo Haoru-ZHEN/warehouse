@@ -1,0 +1,248 @@
+body {
+     margin: 0;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+     font-family: 'Gotham', sans-serif;
+}
+
+* {
+     font-family: 'Gotham', sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.containAll{
+     width: 100%;
+     
+}
+
+
+header {
+     /*position: absolute;*/
+     top: 0;
+     width: 100%;
+     align-items: center;
+     z-index: 99;
+     /*position: fixed;*/
+     position: relative;
+     transition: top 0.3s ease;
+}
+
+.firstHead {
+     background:linear-gradient(to right, #2cb2f5, #12a7f2);/*#f5f5f5;*/
+     /*background: linear-gradient(-180deg,#f53d2d,#f63);*/
+     background: #0F6CBD;
+     padding: 5px;
+     align-items: center;
+     padding: 10px 50px;
+     display: flex;
+     flex-direction: row;
+     justify-content: end;
+}
+
+.firstHead ul{
+     margin-bottom: 0;
+}
+
+.firstHead ul li a {
+     color: #fff;
+     font-size: 12px;
+     font-weight: 350;
+     border-right: 2px solid #f5f5f5;
+}
+
+
+
+.firstHead ul li a:hover {
+     opacity: 0.5;
+}
+
+.firstHead ul li:nth-child(3) a {
+     border-right: 0px;
+}
+
+.secondHeader {
+     padding: 10px 40px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: #fff;
+}
+
+header ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 0;
+}
+
+header ul li {
+     list-style: none;
+}
+
+
+header .rightUl li {
+     margin-right: 20px;
+}
+
+header ul li a {
+     text-decoration: none;
+     padding: 0px 15px;
+     color: #000;
+     transition: color 0.3s ease;
+     font-weight: 300;
+     font-size: 1rem;
+}
+
+.activeTab{
+     padding: 0px 15px 15px;
+     border-bottom: 2px solid #0188cc;
+     color: #0188cc; 
+}
+
+header .secondHeader ul li a:hover, header .secondHeader ul li a.activeTab {
+     padding: 0px 15px 15px;
+     border-bottom: 2px solid #0188cc;
+     color: #0188cc;
+}
+
+.secondHeader img{
+     width: 150px;
+}
+
+
+header ul li .searchBar {
+     width: max-content;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     background-color: #f5f5f5;
+     border-radius: 25px;
+     padding: 0px 0px;
+}
+/*
+header ul li .searchBar input:hover{
+     background-color: #e0e0e0;
+}*/
+
+header ul li .searchBar input {
+     width: 120px;
+     outline: none;
+     border: 0;
+     font-size: 15px;
+     font-weight: 300;
+     color: #000;
+     background-color: transparent;
+     margin-left: 10px;
+}
+header ul li .searchBar input::placeholder {
+     font-weight: 400;
+     opacity: 0.5;
+}
+
+header ul li .searchBar svg path{
+     stroke: #000 !important;
+}
+
+.secondHeader .rightUl svg {
+     width: 40px;
+     height: 40px;
+     cursor: pointer;
+     border-radius: 50%;
+     padding: 8px;
+}
+.secondHeader .rightUl a{
+     text-decoration: none;
+     padding: 0px 0px;
+     color: #000;
+     font-weight: 300;
+     font-size: 0rem;
+     transition: none;
+}
+.secondHeader .rightUl a:hover{
+     padding: 0px 0px 0px;
+     border-bottom: 0px solid #0188cc;
+     color: #0188cc;
+}
+.secondHeader .rightUl Link .allicon{
+     width: 40px;
+     height: 40px;
+     padding: 0;
+     display: flex;
+}
+
+.secondHeader .rightUl a .cartBadge{
+     background-color: #0188cc;
+     color: #fff;
+     border: 0px solid #0188cc;
+     border-radius: 50%;
+     width: 15px;
+     height: 15px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     transform: translateY(-37px) translateX(22px);
+}
+
+.secondHeader .rightUl a .cartBadge h4{
+     font-size: 10px;
+     font-weight: 300;
+}
+
+.secondHeader .rightUl svg path{
+     stroke: #0188cc;
+}
+
+.secondHeader .rightUl li:nth-child(2){
+     width: 40px;
+     height: 40px;
+}
+
+.secondHeader .rightUl li:nth-child(3){
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     padding: 8px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+}
+/*
+.secondHeader .rightUl .cartIcon{
+     font-size: 23px;
+     width: 80px;
+     size: 15x;
+     color: #0188cc;
+}*/
+
+.secondHeader .rightUl .searchBar svg:hover {
+     background-color: #e0e0e0;
+}
+
+.secondHeader .rightUl svg:hover ,
+.secondHeader .rightUl li:nth-child(3):hover{
+     background-color: #f5f5f5;
+}
+
+/*========== SCROLL BAR ==========*/
+/*::-webkit-scrollbar {
+     width: 0.6rem;
+     background-color: hsl(var(--hue-color), 12%, 90%);
+     border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+     background-color: var(--scroll-thumb-color);
+     border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+     background-color: var(--text-color-light);
+}*/

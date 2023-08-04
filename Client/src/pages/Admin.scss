@@ -1,0 +1,79 @@
+.AdminDiv {
+     * {
+          margin: 0;
+          padding: 0;
+          font-family: 'Gotham', sans-serif;
+          box-sizing: border-box;
+          text-align: start;
+     }
+
+     body {
+          min-height: 100vh;
+          background: #f8f8f8;
+          display: flex;
+          flex-direction: column;
+     }
+
+     .contentDiv {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .contentDiv .inputBox {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          width: 20%;
+          margin-top: 30px;
+     }
+
+     .contentDiv .inputBox label {
+          font-size: 1em;
+          color: #5c5e62;
+          font-weight: 500;
+          transition: 0.5s;
+     }
+
+     .contentDiv .inputBox input {
+          max-width: 300px;
+          width: 300px;
+          background: #f4f4f4;
+          border-radius: 4px;
+          outline: none;
+          border: 1px solid #f4f4f4;
+          padding: 10px;
+          font-weight: 500;
+          font-size: 15px;
+          color: #5c5e62;
+          transition: border 0.3s ease;
+          margin-top: 10px;
+     }
+
+     .contentDiv .inputBox input:focus {
+          border: 1px solid #bababa;
+     }
+
+     .contentDiv button{
+          width: 200px;
+          color: #fff;
+          padding: 10px;
+          border-radius: 5px;
+          outline-offset: -5px;
+          border: none;
+          background-color: #3e6ae1;
+          font-size: 14px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          margin-top: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+     }
+
+     .contentDiv button:hover {
+          background-color: #2c4999;
+     }
+}

@@ -1,0 +1,129 @@
+.BrandDetailDiv {
+     background-color: #f8f8f8;
+
+     .parts {
+          width: 100%;
+          display: flex;
+          background-color: #fff;
+     }
+
+     .section1 {
+          flex-direction: row;
+          padding: 40px 200px;
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+     }
+
+     .section1 .leftDiv img {
+          width: 315px;
+          height: 144px;
+          object-fit: cover;
+     }
+
+     .section1 .rightDiv {
+          display: flex;
+          flex-direction: column;
+          margin-left: 40px;
+     }
+
+     .section1 .rightDiv p {
+          font-size: 14px;
+          font-weight: 300;
+          text-align: justify;
+          color: #5b5b5b;
+     }
+
+     .section2 {
+          flex-direction: column;
+          padding: 40px 200px;
+          margin-top: 40px;
+     }
+
+     .section2 .textDiv {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 30px;
+
+     }
+
+     .section2 .textDiv h3 {
+          font-weight: 400;
+          margin-right: 20px;
+          color: #5b5b5b;
+          font-size: 18px;
+     }
+
+     .section2 .textDiv h4 {
+          font-size: 14px;
+          font-weight: 300;
+          color: #ababab;
+     }
+
+     .section2 .grid_container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          column-gap: 40px;
+     }
+
+     .section2 .grid_container .gridItem {
+          width: 275px;
+          height: 385px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: start;
+          padding: 20px;
+          text-align: start;
+          border: 1px solid #fff;
+
+          img {
+               width: auto;
+               height: 205px;
+               object-fit: cover;
+               cursor: pointer;
+               margin-bottom: 20px;
+          }
+
+          h3 {
+               width: 100%;
+               font-size: 16px;
+               font-weight: 400;
+               margin-bottom: 5px;
+          }
+
+          h4 {
+               width: 100%;
+               font-size: 12px;
+               font-weight: 300;
+               color: #ababab;
+               margin-bottom: 5px;
+               white-space: nowrap;
+               overflow: hidden;
+               text-overflow: ellipsis;
+               max-lines: 1;
+          }
+
+          a {
+               width: 100%;
+               font-size: 12px;
+               font-weight: 300;
+               color: #0188cc;
+               margin-bottom: 5px;
+          }
+
+          a i {
+               text-decoration: underline;
+               font-size: 15px;
+          }
+          h2 {
+               width: 100%;
+               font-size: 18px;
+               font-weight: 600;
+          }
+     }
+
+     .section2 .grid_container .gridItem:hover {
+          border: 1px solid #0188cc;
+          box-shadow: 0 1px 5px rgb(1, 136, 204, 0.5);
+     }
+}

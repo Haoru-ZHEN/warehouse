@@ -1,0 +1,296 @@
+h3,
+h2,
+h4 {
+     margin-bottom: 0px;
+}
+
+.CartDiv {
+     width: 100%;
+     min-height: 100vh;
+     background-color: #f5f5f5;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+
+     h2.title{
+          width: 100%;
+          background-color: #fff;
+          padding: 20px;
+          margin-bottom: 40px;
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+          
+     }
+
+     .contentDiv {
+          width: 75%;
+          padding: 0 0 75px 0;
+
+          h2 {
+               margin-top: 40px;
+               margin-bottom: 20px;
+          }
+
+          .titleDiv {
+               display: flex;
+               flex-direction: row;
+               display: grid;
+               grid-template-columns: 0.25fr 1.5fr 1fr 1fr 1fr;
+               align-items: center;
+               justify-content: center;
+               background-color: #fff;
+               padding: 20px 40px;
+               border-radius: 5px;
+               margin-bottom: 20px;
+               box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+
+               .first{
+                    font-weight: 350;
+                    color: #000;
+               }
+               h3 {
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: #888;
+               }
+
+               .mainCheckbox{
+                    width: 20px;
+               }
+
+               .mainCheckbox input {
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid rgba(0, 0, 0, 0.14);
+               }
+          }
+
+          .itemContainer {
+               width: 100%;
+               display: flex;
+               flex-direction: column;
+
+               .itemBox {
+                    width: 100%;
+                    height: max-content;
+                    background-color: #fff;
+                    border-radius: 3px;
+                    margin-bottom: 40px;
+                    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+
+                    .brandBox {
+                         display: flex;
+                         flex-direction: row;
+                         align-items: center;
+                         padding: 20px 40px;
+                         border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+
+                         h3 {
+                              font-size: 15px;
+                              font-weight: 350;
+                              margin-left: 30px;
+                              color: rgba(0,0,0,.87);
+                         }
+
+                         .brandCheckBox input {
+                              width: 20px;
+                              height: 20px;
+                              border: 1px solid rgba(0, 0, 0, 0.14);
+                         }
+                    }
+
+                    .itemBox{
+                         display: flex;
+                         flex-direction: row;
+                    }
+               }
+
+               .itemDiv {
+                    width: 100%;
+                    max-height: 120px;
+                    /*display: flex;
+                    flex-direction: row;*/
+                    display: grid;
+                    grid-template-columns: 0.25fr 0.5fr 1fr 1.5fr 1fr 1fr;
+                    align-items: center;
+                    background-color: #fff;
+                    border-radius: 3px;
+                    padding: 20px 40px;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+
+                    .checkingBox input {
+                         width: 20px;
+                         height: 20px;
+                         border: 1px solid rgba(0, 0, 0, 0.14);
+                    }
+
+                    .imgDiv{
+                         width: 80px;
+                         height: 80px;
+
+                         img {
+                              width: auto;
+                              height: 100%;
+                              object-fit: cover;
+                              //margin-right: 20px;
+                              //border: 1px solid #000;
+                         }
+                    }
+
+                    
+
+                    h3 {
+                         font-size: 16px;
+                         font-weight: 350;
+                         
+                         color: rgba(0,0,0,.87);
+                    }
+
+                    h4 {
+                         font-size: 14px;
+                         font-weight: 300;
+                    }
+
+                    .numberDiv {
+                         display: flex;
+                         flex-direction: row;
+                         height: 30px;
+
+                         .minusIcon,
+                         .plusIcon {
+                              cursor: pointer;
+                              width: 30px;
+                              height: 30px;
+                              background: #fff;
+                              padding: 5px;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              text-align: center;
+                              border: 1px solid rgba(0, 0, 0, 0.09);
+                              border-top-left-radius: 4px;
+                              border-bottom-left-radius: 4px;
+                              user-select: none;
+                         }
+
+                         .plusIcon {
+                              border-radius: 0;
+                              border-top-right-radius: 4px;
+                              border-bottom-right-radius: 4px;
+                         }
+
+                         input {
+                              width: 80px;
+                              background: #fff;
+                              padding: 5px;
+                              text-align: center;
+                              border: 0;
+                              outline: none;
+                              border-top: 1px solid rgba(0, 0, 0, 0.09);
+                              border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+                              font-size: 14px;
+                              font-weight: 350;
+                         }
+                    }
+
+                    h4.totalPrice {
+                         color: #0188cc;
+                         font-weight: 350;
+                    }
+               }
+          }
+     }
+
+     .summaryDiv {
+          width: 75%;
+          position: fixed;
+          bottom: 0;
+          display: flex;
+          flex-direction: row;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+          justify-content: center;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 -3px 10px 1px rgba(0, 0, 0, 0.05);
+
+          .leftDiv,
+          .rightDiv {
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+          }
+
+          .leftDiv {
+               h3 {
+                    cursor: pointer;
+               }
+          }
+
+          .rightDiv {
+               justify-content: end;
+               div {
+                    margin-right: 30px;
+               }
+               h3 {
+                    text-align: start;
+               }
+          }
+
+          .checkingBox {
+               text-align: start;
+               margin-bottom: 0;
+               margin-right: 30px;
+          }
+
+          .checkingBox label {
+               font-size: 14px;
+               font-weight: 300;
+               user-select: none;
+          }
+
+          h3 {
+               font-size: 14px;
+               font-weight: 300;
+               margin-right: 5px;
+               user-select: none;
+          }
+
+          h2 {
+               font-size: 25px;
+               font-weight: 500;
+               color: #3e6ae1;
+          }
+
+          button {
+               width: 250px;
+               padding: 10px 0;
+               border-radius: 50px;
+               outline-offset: -5px;
+               outline-color: #fff;
+               border: none;
+               font-size: 14px;
+               cursor: pointer;
+               color: #fff;
+               background-color: #3e6ae1;
+               transition: background-color 0.3s ease;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+
+               svg {
+                    margin-left: 10px;
+                    transition: transform 0.3s ease;
+               }
+          }
+
+          button:hover {
+               background-color: #3e65d1;
+          }
+
+          button:hover svg {
+               transform: translateX(10px);
+          }
+     }
+}
