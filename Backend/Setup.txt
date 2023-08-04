@@ -1,0 +1,26 @@
+backend
+{
+npm init -y
+npm i express mysql nodemon
+create index.js
+(
+   "type": "module",
+     "scripts": {
+     "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "nodemon index.js"
+     },  
+)
+     npm i cors
+
+}
+
+
+frontend/client
+{
+     npx create-react-app .
+     npm i react-router-dom
+     npm install axios
+
+}
+
+rafce - shortcut for jsx
