@@ -10,8 +10,8 @@ export default async (email, subject, text) => {
                post: 587,
                secure: true,
                auth: {
-                    user: 'zhenhaochok@gmail.com',
-                    pass: 'mmirvssocdisrzef',
+                    user: '',
+                    pass: '',
                },
           });
           //console.log(process.env.REACT_APP_USER);
