@@ -15,7 +15,7 @@ const salt = 10;
 const db = mysql.createConnection({
      host: 'localhost',
      user: 'root',
-     password: '89622055Hao',
+     password: '-',
      database: 'warehouse',
 });
 
